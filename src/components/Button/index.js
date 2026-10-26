@@ -1,8 +1,10 @@
-const Button = () => {
-  return (
-    <div className="App">
+import { ButtonContainer } from './styles';
 
-    </div>
+const Button = ({label, onClick, color}) => {
+  return (
+    <ButtonContainer onClick={onClick} $color={color}>
+      {label}
+    </ButtonContainer>
   );
 }
 
